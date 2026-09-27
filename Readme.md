@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Роман Морозов](https://up.htmlacademy.ru/javascript-individual/3/user/993469).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Лепёшкин](https://htmlacademy.ru/profile/spearance).
 
 ---
 
