@@ -1,3 +1,6 @@
+import { initScale, resetScale } from './scale.js';
+import { initEffects, resetEffects } from './effects.js';
+
 const MAX_HASHTAG_COUNT = 5;
 const MAX_COMMENT_LENGTH = 140;
 const HASHTAG_PATTERN = /^#[a-zа-яё0-9]{1,19}$/i;
@@ -101,6 +104,8 @@ function closeUploadForm () {
   document.body.classList.remove('modal-open');
   uploadForm.reset();
   pristine.reset();
+  resetScale();
+  resetEffects();
   document.removeEventListener('keydown', onDocumentKeydown);
 }
 
@@ -114,6 +119,8 @@ const initUploadForm = () => {
   uploadInput.addEventListener('change', onUploadInputChange);
   cancelButton.addEventListener('click', onCancelButtonClick);
   uploadForm.addEventListener('submit', onFormSubmit);
+  initScale();
+  initEffects();
 };
 
 export { initUploadForm };
